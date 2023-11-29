@@ -1,0 +1,113 @@
+.card {
+  max-width: 360px;
+  border: none;
+  break-inside: avoid; // children of grid-content won't break anymore
+  margin: 0 auto;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container {
+    padding: 2px 23px;
+    margin-top: 10px;
+    .post-comments {
+      margin: 20px 0;
+      display: flex;
+      span:nth-of-type(1) {
+        font-size: 11px;
+        flex-grow: 1;
+      }
+      span:nth-of-type(2) {
+        font-size: 11px;
+        flex-grow: 1;
+      }
+      span:nth-of-type(3) {
+        font-size: 11px;
+        flex-grow: 4;
+        text-align: right;
+      }
+    }
+    .post-line {
+      border-bottom: 2px solid rgba(188, 182, 182, 0.748);
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .post-details {
+      display: flex;
+      height: 46px;
+      width: 100%;
+
+      .post-detail-items {
+        &:nth-of-type(1) {
+          flex-grow: 1;
+          align-self: center;
+        }
+        &:nth-of-type(2) {
+          flex-grow: 6;
+          display: flex;
+          p {
+            font-size: 12px;
+            font-family: var(--font-family-header);
+            margin-left: 5px;
+            margin: 0;
+            padding: 0;
+            align-self: center;
+            &:nth-of-type(2) {
+              i {
+                font-size: 5px;
+                margin: 0 5px;
+                position: relative;
+                top: -2px;
+              }
+            }
+            &:nth-of-type(1) {
+              margin: 0 5px;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          flex-grow: 1;
+          text-align: right;
+          align-self: center;
+          a {
+            color: black;
+          }
+        }
+
+        svg {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+    .text {
+      display: block;
+      margin: 10px auto 40px auto;
+
+      max-height: fit-content;
+      &:hover {
+        color: var(--color_18);
+      }
+      h1 {
+        font-size: 28px;
+        font-family: var(--font-family-footer);
+      }
+      p {
+        font-size: 13px;
+        height: 100%;
+        font-weight: var(--font-family-header);
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+    }
+    .fa-heart {
+      color: var(--color_3);
+    }
+  }
+}
+@media (min-width: 480px) {
+  .card {
+    border: 1px solid rgba(219, 217, 217, 0.744);
+    margin-bottom: 20px;
+  }
+}

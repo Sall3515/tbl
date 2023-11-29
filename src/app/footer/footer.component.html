@@ -1,0 +1,17 @@
+<footer id="footer">
+    <h1>Subscribe here to get my latest posts</h1>
+    <form #inputForm="ngForm" (ngSubmit)="onSubscribe()">
+        <label for="email">Enter your email here *</label>
+        <div class="subscription form-group">
+            <input [class.red-border]="!emailControl.pristine" [class.white-border]="emailControl.valid" id="email"
+                type="email" name="email" [(ngModel)]="email" #emailControl="ngModel" email required />
+            <button>Join</button>
+        </div>
+    </form>
+    <div class="footer-items">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <p>© 2035 by The Book Lover. Powered and secured by Wix</p>
+
+    </div>
+</footer>

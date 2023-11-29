@@ -1,0 +1,26 @@
+<div class="home-container">
+    <div class="hero-image">
+        <div class="white-box">
+            <h2>THE BOOK LOVER</h2>
+            <p>READ ALL ABOUT IT</p>
+        </div>
+    </div>
+
+    <div class="home-ribbon">
+        <span>Home</span>
+    </div>
+    <div id="grid-layout">
+        <p><a href="">All Posts</a></p>
+
+        <div class="grid-content">
+
+            <app-card class="item" *ngFor="let card of cards" [card]="card"></app-card>
+            <!-- here card value is loval variable defined by
+                *ngFor , representing current item in the cards array. -->
+
+        </div>
+
+
+
+    </div>
+</div>

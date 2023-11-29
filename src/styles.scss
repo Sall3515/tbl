@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-family: "Arimo", sans-serif;
+  --font-family-header: "Raleway", sans-serif;
+  --font-family-footer: "Cormorant Garamond", serif;
+  --color_44: rgba(255, 255, 255);
+
+  --color_2: rgba(0, 0, 0);
+  --color_3: rgba(237, 28, 36);
+  --color_4: rgba(0, 136, 203);
+  --color_5: rgba(255, 203, 5);
+  --color_6: rgba(114, 114, 114);
+  --color_7: rgba(176, 176, 176);
+  --color_23: rgba(41, 119, 237);
+  --color_9: rgba(114, 114, 114);
+  --color_10: rgba(176, 176, 176);
+  --color_15: rgba(0, 0, 0);
+  --color_16: rgba(235, 207, 155);
+  --color_17: rgba(186, 146, 71);
+  --color_18: rgba(145, 114, 55);
+  --color_24: rgba(27, 79, 158);
+  --color_19: rgba(120, 94, 46);
+  --color_20: rgba(71, 56, 27);
+  --color_25: rgba(14, 40, 79);
+  --color_26: rgba(218, 163, 231);
+  --color_27: rgba(189, 115, 208);
+  --color_28: rgba(151, 20, 184);
+  --color_29: rgba(101, 13, 123);
+  --color_30: rgba(50, 7, 61);
+  --color_31: rgba(187, 213, 194);
+  --color_32: rgba(143, 171, 151);
+  --color_33: rgba(97, 129, 106);
+  --color_34: rgba(44, 87, 56);
+  --color_35: rgba(22, 44, 28);
+  --color_36: rgba(255, 255, 255);
+  --color_37: rgba(0, 0, 0);
+  --color_38: rgba(245, 245, 245);
+  --color_39: rgba(199, 199, 199);
+  --color_40: rgba(77, 77, 77);
+
+  // sign in  component styles
+
+  --theme-signup: #03a9f4;
+  --theme-signup-darken: #0288d1;
+  --theme-signup-background: #2c3034;
+  --theme-login: #673ab7;
+  --theme-login-darken: #512da8;
+  --theme-login-background: #f9f9f9;
+  --theme-dark: #212121;
+  --theme-light: #e3e3e3;
+  --font-default: "Roboto", sans-serif;
+  --success-clr: #5cb85c;
+  --error-clr: #d9534f;
+}

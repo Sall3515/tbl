@@ -1,0 +1,135 @@
+footer {
+  height: 391px;
+
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  h1 {
+    font-family: var(--font-family-footer);
+    font-size: 21px;
+    color: white;
+    width: 171px;
+    font-weight: 100;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  label {
+    font-family: var(--font-family-header);
+    color: white;
+    font-size: 15px;
+    padding: 0 21px 0 0;
+    margin-bottom: 5px;
+  }
+  div.footer-items {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+
+    p {
+      width: 216px;
+      margin-top: 15px;
+      color: white;
+      font-size: 13px;
+    }
+    i {
+      color: white;
+      margin: 12px;
+    }
+  }
+
+  .subscription {
+    display: block;
+    input[type="email"] {
+      width: 276px;
+      height: 42px;
+      margin-bottom: 10px;
+      border: 1px solid white;
+      background-color: black;
+      color: white;
+      padding: 0 0 0 10px;
+
+      &:focus {
+        border-radius: 0px;
+        outline: 1px solid white;
+      }
+      &.red-border {
+        border: 3px solid rgba(255, 0, 0, 0.862);
+        outline: none;
+      }
+      &.white-border {
+        border-radius: 0px;
+        outline: none;
+        border: 1px solid white;
+        background-color: var(--color_39);
+        font-weight: 600;
+      }
+    }
+    button {
+      display: block;
+      width: 276px;
+      height: 36px;
+      border: 1px solid white;
+      background: black;
+      color: white;
+      font-size: 15px;
+      font-family: var(--font-family-header);
+      &:focus {
+        background-color: var(--color_18);
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      font-size: 37px;
+      width: 915px;
+      text-align: left;
+      flex-shrink: 1;
+    }
+    .subscription {
+      display: flex;
+      flex-shrink: 1;
+      input[type="email"] {
+        min-width: 720px;
+        height: 50px;
+        padding: 3px 3px 3px 21px;
+        font-size: 16px;
+      }
+
+      button {
+        width: 195px;
+        height: 50px;
+        &:focus {
+          background-color: var(--color_18);
+          transition: 0.4s ease-in;
+        }
+      }
+    }
+    div.footer-items {
+      flex-shrink: 1;
+      display: flex; //გასასწორებელია ფლექსით. რესპონსიულობა
+      width: 915px;
+      flex-direction: row-reverse;
+      p {
+        flex-grow: 1;
+        text-align: left;
+        width: 345px;
+        font-size: 14px;
+      }
+      i {
+        margin: 10px;
+      }
+    }
+  }
+}
